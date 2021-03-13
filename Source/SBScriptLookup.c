@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2018 Muhammad Tayyab Akram
+ * Copyright (C) 2018 Muhammad Tayyab Akram
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,21 +14,10 @@
  * limitations under the License.
  */
 
-#ifndef _SHEEN_BIDI_H
-#define _SHEEN_BIDI_H
-
-#include "SBAlgorithm.h"
-#include "SBBase.h"
-#include "SBBidiType.h"
-#include "SBCodepoint.h"
-#include "SBCodepointSequence.h"
-#include "SBGeneralCategory.h"
-#include "SBLine.h"
-#include "SBMirrorLocator.h"
-#include "SBParagraph.h"
-#include "SBRun.h"
-#include "SBScript.h"
-#include "SBScriptLocator.h"
+#include <SBScriptLookup.h>
 #include "SBScriptLookup.h"
 
-#endif
+
+SBScript SBLookupScript(SBCodepoint codepoint) {
+	return LookupScript(codepoint);
+}
