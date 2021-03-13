@@ -35,6 +35,7 @@
 #include "SBMirrorLocator.c"
 #include "SBParagraph.c"
 #include "SBScriptLocator.c"
+#include "SBScriptLookup.c"
 #include "ScriptLookup.c"
 #include "ScriptStack.c"
 #include "StatusStack.c"
